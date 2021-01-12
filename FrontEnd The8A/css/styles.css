@@ -1,0 +1,370 @@
+@font-face {
+  font-family: bold;
+  src: url(../fonts/SharpSansNo1-Bold.woff);
+}
+
+@font-face {
+  font-family: medium;
+  src: url(../fonts/SharpSansNo1Medium-Regular.woff);
+}
+
+@font-face {
+  font-family: semibold;
+  src: url(../fonts/proxima_nova_alt_light-webfont.woff);
+}
+
+@font-face {
+  font-family: proxima;
+  src: url(../fonts/proximanova-regular-webfont.woff);
+}
+
+h1, h2, h3, h4 {
+  font-weight: normal;
+}
+
+body header {
+  font-family: bold;
+}
+
+body header h2 {
+  font-family: semibold;
+}
+
+body main section p {
+  font-family: proxima;
+}
+
+body main section ol li h3 {
+  font-family: bold;
+}
+
+body main section ol li h4 {
+  font-family: proxima;
+  font-weight: normal;
+}
+
+body main form {
+  font-family: bold;
+}
+
+body main form input, body main form select {
+  font-family: proxima;
+}
+
+body footer {
+  font-family: proxima;
+}
+
+body header {
+  background-image: url("../assets/Group 4.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body header h4 {
+  background-color: #E56910;
+}
+
+body main section nav a {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+body main section nav #cluster {
+  background-image: url("../assets/cluster.png");
+}
+
+body main section nav #asobanca {
+  background-image: url("../assets/asobanca.png");
+}
+
+body main section nav #ipbf {
+  background-image: url("../assets/ipbf.jpg");
+}
+
+body main section nav #hightelecom {
+  background-image: url("../assets/hightelecom.png");
+}
+
+body main section nav #ebanx {
+  background-image: url("../assets/ebanx.png");
+}
+
+body main section nav #zendesk {
+  background-image: url("../assets/zendesk.jpg");
+}
+
+body main section ol li div {
+  background-image: url("../assets/img-aurnheimer.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+body main form {
+  background-color: #eaeded;
+}
+
+body main form input, body main form select {
+  background-color: white;
+}
+
+body main form input[type=submit] {
+  background-color: #02363D;
+  transition: background-color 1s;
+}
+
+body main form input[type=submit]:hover {
+  background-color: #04626e;
+}
+
+body footer {
+  background-color: #F8F9F9;
+}
+
+body footer nav {
+  background-image: url("../assets/redes.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+body footer div {
+  background-color: #c3d1d3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-clip: border-box;
+}
+
+body {
+  width: calc(100vw - (100vw - 100%));
+  font-size: 1.4vw;
+  color: #02363D;
+}
+
+body header {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  padding-bottom: 4%;
+}
+
+body header div {
+  position: absolute;
+}
+
+body header h4, body header h1, body header h2 {
+  text-align: center;
+  margin-bottom: 1%;
+}
+
+body header h4 {
+  text-transform: uppercase;
+  font-size: 80%;
+  color: white;
+  border-radius: 4px;
+  padding: .3em;
+  padding-left: .8em;
+  padding-right: .8em;
+  margin: 4% auto 1%;
+}
+
+body header h1:nth-child(5) {
+  font-style: italic;
+}
+
+body header h2 {
+  font-size: 100%;
+  text-transform: uppercase;
+}
+
+body main {
+  width: 100%;
+  padding-top: 8%;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+}
+
+body main section {
+  width: 60%;
+  height: 100%;
+}
+
+body main section p, body main section nav, body main section ol {
+  margin-bottom: 6%;
+}
+
+body main section p {
+  color: #405457;
+  width: 90%;
+}
+
+body main section p + nav {
+  margin-top: 10%;
+}
+
+body main section nav {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  height: 4vh;
+}
+
+body main section nav a {
+  min-width: 15%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+body main section ol li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 5% 0;
+}
+
+body main section ol li h3, body main section ol li h4 {
+  margin-left: 20%;
+}
+
+body main section ol li div {
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  left: 10%;
+  transform: translateX(-50%);
+}
+
+body main form {
+  height: 100%;
+  width: 40%;
+  padding: 5%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+body main form h3 {
+  font-size: 100%;
+  text-align: center;
+  margin: 15% 0;
+}
+
+body main form label, body main form input {
+  display: block;
+}
+
+body main form label {
+  font-size: 80%;
+}
+
+body main form input, body main form select {
+  width: 100%;
+  border: solid 1px #b3bebe;
+  font-size: 80%;
+  padding: 3.5%;
+  color: #405457;
+  margin-bottom: 8%;
+}
+
+body main form input[type=submit] {
+  color: white;
+  font-size: 100%;
+  margin-bottom: 15%;
+  transition: background-color 1s;
+}
+
+body main form input[type=submit]:hover {
+  cursor: pointer;
+}
+
+body main form select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}
+
+body footer {
+  position: relative;
+  width: 100%;
+  max-height: 30vh;
+  min-height: 20vh;
+  margin-top: 7%;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+body footer a#copy {
+  color: #7a989d;
+  text-decoration: none;
+  font-size: 80%;
+  margin-top: 3%;
+}
+
+body footer nav {
+  width: 30%;
+  margin-top: 1%;
+  display: flex;
+  justify-content: space-around;
+}
+
+body footer nav a {
+  width: 15%;
+  height: 100%;
+}
+
+body footer div {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  width: 80%;
+  height: 1px;
+}
+
+@media all and (orientation: portrait) {
+  body {
+    font-size: 3vw;
+  }
+  body header {
+    padding: 5%;
+  }
+  body main {
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 125%;
+  }
+  body main section, body main form {
+    width: 100%;
+    height: auto;
+  }
+  body footer {
+    max-height: 40vh;
+    min-height: 20vh;
+    display: block;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  body footer nav {
+    width: 100%;
+    min-height: 15vh;
+  }
+  body footer nav a {
+    min-height: 8vh;
+    max-height: 15vh;
+  }
+  body footer div {
+    position: relative;
+  }
+}
