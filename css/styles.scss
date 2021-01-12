@@ -1,5 +1,5 @@
 @import "_fonts.scss";
-
+@import "_backgrounds.scss";
 *{
     margin: 0;
     padding: 0;
@@ -14,14 +14,11 @@ body{
     header{
         position: relative;
 
-        background-image: url("../assets/Group 4.svg");
-        background-repeat: no-repeat;
-        background-size: cover;
-
         width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
+        padding: 0;
         padding-bottom: 4%;
         div{
             position: absolute;
@@ -34,7 +31,6 @@ body{
           text-transform: uppercase;
           font-size: 80%;
           color:white;
-          background-color: #E56910;
           border-radius: 4px;
           padding: .3em;
           padding-left: .8em;
@@ -80,24 +76,6 @@ body{
                 background-size: contain;
                 background-position: center;
               }
-              #cluster{
-                background-image: url("../assets/cluster.png");
-              }
-              #asobanca{
-                background-image: url("../assets/asobanca.png");
-              }
-              #ipbf{
-                background-image: url("../assets/ipbf.jpg");
-              }
-              #hightelecom{
-                background-image: url("../assets/hightelecom.png");
-              }
-              #ebanx{
-                background-image: url("../assets/ebanx.png");
-              }
-              #zendesk{
-                background-image: url("../assets/zendesk.jpg");
-              }
             }
             ol{
                 li{
@@ -114,9 +92,6 @@ body{
                         height: 100%;
                         left: 10%;
                         transform: translateX(-50%);
-                        background-image: url("../assets/img-aurnheimer.png");
-                        background-repeat: no-repeat;
-                        background-size: contain;
                     }
                 }
             }
@@ -124,7 +99,6 @@ body{
         form{
           height: 100%;
           width: 40%;
-          background-color: #F8F9F9;
           padding: 5%;
           padding-top: 0;
           padding-bottom: 0;
@@ -146,18 +120,21 @@ body{
             padding: 3.5%;
             color: #405457;
             margin-bottom: 8%;
-            background-color: white;
           }
           input[type=submit]{
             color: white;
             font-size: 100%;
-            background-color:#02363D;
             margin-bottom: 15%;
             transition: background-color 1s;
             &:hover{
-              background-color: lighten(#02363D, 10%);
               cursor: pointer;
             }
+          }
+          select{
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            text-indent: 1px;
+            text-overflow: '';
           }
         }
     }
@@ -165,9 +142,8 @@ body{
       position: relative;
       width: 100%;
       max-height: 30vh;
-      min-height: 10em;
+      min-height: 20vh;
       margin-top: 7%;
-      background-color: #F8F9F9;
       padding-left: 10%;
       padding-right: 10%;
       display: flex;
@@ -183,10 +159,6 @@ body{
         margin-top: 1%;
         display: flex;
         justify-content: space-around;
-        background-image: url("../assets/redes.jpg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: top;
         a{
           width: 15%;
           height: 100%;
@@ -198,7 +170,8 @@ body{
         left: 10%;
         width: 80%;
         height: 1px;
-        background-color: lighten(#405457, 50%);
       }
     }
 }
+
+@import "_mobile.scss";

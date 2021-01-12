@@ -55,6 +55,84 @@ body footer {
   font-family: proxima;
 }
 
+body header {
+  background-image: url("../assets/Group 4.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body header h4 {
+  background-color: #E56910;
+}
+
+body main section nav a {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+body main section nav #cluster {
+  background-image: url("../assets/cluster.png");
+}
+
+body main section nav #asobanca {
+  background-image: url("../assets/asobanca.png");
+}
+
+body main section nav #ipbf {
+  background-image: url("../assets/ipbf.jpg");
+}
+
+body main section nav #hightelecom {
+  background-image: url("../assets/hightelecom.png");
+}
+
+body main section nav #ebanx {
+  background-image: url("../assets/ebanx.png");
+}
+
+body main section nav #zendesk {
+  background-image: url("../assets/zendesk.jpg");
+}
+
+body main section ol li div {
+  background-image: url("../assets/img-aurnheimer.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+body main form {
+  background-color: #eaeded;
+}
+
+body main form input, body main form select {
+  background-color: white;
+}
+
+body main form input[type=submit] {
+  background-color: #02363D;
+  transition: background-color 1s;
+}
+
+body main form input[type=submit]:hover {
+  background-color: #04626e;
+}
+
+body footer {
+  background-color: #F8F9F9;
+}
+
+body footer nav {
+  background-image: url("../assets/redes.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+body footer div {
+  background-color: #c3d1d3;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -70,13 +148,11 @@ body {
 
 body header {
   position: relative;
-  background-image: url("../assets/Group 4.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
+  padding: 0;
   padding-bottom: 4%;
 }
 
@@ -93,7 +169,6 @@ body header h4 {
   text-transform: uppercase;
   font-size: 80%;
   color: white;
-  background-color: #E56910;
   border-radius: 4px;
   padding: .3em;
   padding-left: .8em;
@@ -150,30 +225,6 @@ body main section nav a {
   background-position: center;
 }
 
-body main section nav #cluster {
-  background-image: url("../assets/cluster.png");
-}
-
-body main section nav #asobanca {
-  background-image: url("../assets/asobanca.png");
-}
-
-body main section nav #ipbf {
-  background-image: url("../assets/ipbf.jpg");
-}
-
-body main section nav #hightelecom {
-  background-image: url("../assets/hightelecom.png");
-}
-
-body main section nav #ebanx {
-  background-image: url("../assets/ebanx.png");
-}
-
-body main section nav #zendesk {
-  background-image: url("../assets/zendesk.jpg");
-}
-
 body main section ol li {
   position: relative;
   display: flex;
@@ -191,15 +242,11 @@ body main section ol li div {
   height: 100%;
   left: 10%;
   transform: translateX(-50%);
-  background-image: url("../assets/img-aurnheimer.png");
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 body main form {
   height: 100%;
   width: 40%;
-  background-color: #F8F9F9;
   padding: 5%;
   padding-top: 0;
   padding-bottom: 0;
@@ -226,29 +273,32 @@ body main form input, body main form select {
   padding: 3.5%;
   color: #405457;
   margin-bottom: 8%;
-  background-color: white;
 }
 
 body main form input[type=submit] {
   color: white;
   font-size: 100%;
-  background-color: #02363D;
   margin-bottom: 15%;
   transition: background-color 1s;
 }
 
 body main form input[type=submit]:hover {
-  background-color: #04626e;
   cursor: pointer;
+}
+
+body main form select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
 }
 
 body footer {
   position: relative;
   width: 100%;
   max-height: 30vh;
-  min-height: 10em;
+  min-height: 20vh;
   margin-top: 7%;
-  background-color: #F8F9F9;
   padding-left: 10%;
   padding-right: 10%;
   display: flex;
@@ -267,10 +317,6 @@ body footer nav {
   margin-top: 1%;
   display: flex;
   justify-content: space-around;
-  background-image: url("../assets/redes.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top;
 }
 
 body footer nav a {
@@ -284,5 +330,41 @@ body footer div {
   left: 10%;
   width: 80%;
   height: 1px;
-  background-color: #c3d1d3;
+}
+
+@media all and (orientation: portrait) {
+  body {
+    font-size: 3vw;
+  }
+  body header {
+    padding: 5%;
+  }
+  body main {
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 125%;
+  }
+  body main section, body main form {
+    width: 100%;
+    height: auto;
+  }
+  body footer {
+    max-height: 40vh;
+    min-height: 20vh;
+    display: block;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  body footer nav {
+    width: 100%;
+    min-height: 15vh;
+  }
+  body footer nav a {
+    min-height: 8vh;
+    max-height: 15vh;
+  }
+  body footer div {
+    position: relative;
+  }
 }
