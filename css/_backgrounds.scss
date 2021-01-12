@@ -1,0 +1,76 @@
+//main : styles.scss;
+
+body{
+  header{
+      background-image: url("../assets/Group 4.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      h4{
+        background-color: #E56910;
+      }
+  }
+  main{
+      section{
+          nav{
+            a{
+              background-repeat: no-repeat;
+              background-size: contain;
+              background-position: center;
+            }
+            #cluster{
+              background-image: url("../assets/cluster.png");
+            }
+            #asobanca{
+              background-image: url("../assets/asobanca.png");
+            }
+            #ipbf{
+              background-image: url("../assets/ipbf.jpg");
+            }
+            #hightelecom{
+              background-image: url("../assets/hightelecom.png");
+            }
+            #ebanx{
+              background-image: url("../assets/ebanx.png");
+            }
+            #zendesk{
+              background-image: url("../assets/zendesk.jpg");
+            }
+          }
+          ol{
+              li{
+                  div{
+                      background-image: url("../assets/img-aurnheimer.png");
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                  }
+              }
+          }
+      }
+      form{
+        background-color: darken(#F8F9F9, 5%);
+        input, select{
+          background-color: white;
+        }
+        input[type=submit]{
+          background-color:#02363D;
+          transition: background-color 1s;
+          &:hover{
+            background-color: lighten(#02363D, 10%);
+          }
+        }
+      }
+  }
+  footer{
+    background-color: #F8F9F9;
+
+    nav{
+      background-image: url("../assets/redes.jpg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: top;
+    }
+    div{
+      background-color: lighten(#405457, 50%);
+    }
+  }
+}
